@@ -8,7 +8,7 @@ zipfilename = [firstname, '.zip'];
 x = sprintf('c:\\github\\trunk\\%s', zipfilename);
 zip(x, 'c:\class');
 svn('add --force', x);
-svn('ci', x, '-m ""');
+svn('ci', x, '-m ""', '--username kevintraining --password CYf35T_8vn');
 
 fprintf('Download %s from ', zipfilename);
 fprintf('https://github.com/kevintraining/classfiles/blob/main/%s\n\n', ...
