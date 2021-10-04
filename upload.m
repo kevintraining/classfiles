@@ -15,7 +15,7 @@ x           = fullfile(fileparts(mfilename('fullpath')), [firstname, '.zip']);
 zip(x, 'c:\class');
 svn('add --force', x);
 svn('ci', x, '-m ""', ...
-    '--username kevintraining --password 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');
+    '--username kevintraining --password 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');
 
 fprintf('To download %s:\n', zipfilename)
 fprintf('(1) Go to https://github.com/kevintraining/classfiles/blob/main/%s\n', zipfilename);
